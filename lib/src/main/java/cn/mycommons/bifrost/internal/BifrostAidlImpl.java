@@ -27,8 +27,6 @@ public class BifrostAidlImpl extends BifrostAidl.Stub {
 
     private Gson gson = new Gson();
 
-    private ExecutorService executor = Executors.newFixedThreadPool(10);
-
     @Override
     public Resp exec(Req req) throws RemoteException {
         Timber.i("%s-->exec", this);
